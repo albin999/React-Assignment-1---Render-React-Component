@@ -1,9 +1,12 @@
 {
+  "homepage": "hhtp://albin999.github.io/React-Assignment-1---Render-React-Component",
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "test": "jest",
     "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
@@ -49,6 +52,7 @@
     "react-test-renderer": "^16.13.1",
     "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0",
-    "xml-js": "^1.6.11"
+    "xml-js": "^1.6.11",
+    "gh-pages": "^2.1.1"
   }
 }
